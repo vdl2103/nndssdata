@@ -1,13 +1,22 @@
 Package: nndssdata
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Explore NNDSS weekly data for common waterborne infections 
 Version: 0.0.0.9
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: c(person("Victoria", "Lynch",
+          email = vdl2103@cumc.columbia.edu,
+          role = c('aut', 'cre')))
+Maintainer: The package maintainer vdl2013@cumc.columbia.edu
+Description: Allows users to easily access weekly National Notifiable Disease Surveillance System (NNDSS) data 
+  from 1996 through 2018 for six common waterborne pathogens in the US. Data are collected by local health departments
+  and compiled by state health departments before submission to CDC's NNDSS. 
+URL: https://github.com/vdl2103/nndssdata
+BugReports: https://github.com/vdl2103/nndssdata/issues
+License: use_mit_license()
 Encoding: UTF-8
 LazyData: true
 Depends: 
     R (>= 2.10)
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

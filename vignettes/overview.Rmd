@@ -1,5 +1,7 @@
 ---
-title: "Overview"
+title: "Overview of nndssdata"
+author: "Victoria Lynch"
+date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Overview}

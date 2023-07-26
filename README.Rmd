@@ -1,0 +1,52 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  error = TRUE,
+  comment = "#>",
+  fig.path = "README-",
+  out.width = "100%"
+)
+```
+
+## Description of package
+
+This package provides users with weekly case counts for six waterborne infections common in the US for 48 contiguous states from 1996 through 2018. The data come from the National Notifiable Disease Surveillance System (NNDSS), which is maintained by CDC. 
+
+## Weekly case counts by state
+
+The first dataset included in the package is for state level case counts. 
+```{r}
+data("state_nndss_data")
+head(state_nndss_data)
+```
+
+The data frame has the following columns:
+
+-'year': Year for given case count
+-'week': Epidemiological week of the year for given case count
+-'pathogen': Count for one of six specific waterborne pathogens
+-'annual_cumulative_cases": Number of cases in that state for that year to date
+-'current_week_cases': Number of cases that week for a given state
+-'state': State for given case count
+-'date': Calendar date for beginning of epidemiological week
+
+## Weekly case counts by geographic region 
+
+The second datatset included in the package is for geographic region level case counts. 
+```{r}
+data("region_nndss_data")
+head(region_nndss_data)
+```
+
+
+Most of the columns in the data frame are the same as listed above except: 
+
+-'annual_cumulative_cases": Number of cases in that geographic region for that year to date
+-'current_week_cases': Number of cases that week for a given geographic region
+-'state': geographic region in the US for given case count
